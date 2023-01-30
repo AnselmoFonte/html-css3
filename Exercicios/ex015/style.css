@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    background-color: brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    }
+
+h1{color: white; font-family:'Times New Roman', Times, serif; background-color: darkgreen;}
+
+h2{color: darkgreen; background-color: whitesmoke;}

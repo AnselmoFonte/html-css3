@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(189, 189, 189);
+}
+main{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+.main2{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(3, 94, 3);
+}
+
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paragrafo{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+

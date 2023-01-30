@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(199, 199, 199);
+        }
+        header{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 25px 25px 0px 25px;
+            width: 220px;         
+        }
+        header > h1{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            padding: 10px;
+            margin: 1px 25px 25px 25px;
+        }
+        nav > a{
+            background-color: rgb(133, 133, 133);
+            padding: 11px;
+            color: white;     
+            margin: 0px 5px 0px -10px;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            background-color: rgb(110, 110, 110);;
+            box-shadow: 1px 2px 3px 0px black;
+        }
+        main{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 30px 30px;
+            box-shadow: 1px 2px 3px 0px black;
+        }
+
+        article{
+            background-color: rgb(221 221 221);
+            padding: 10px;
+            border-radius: 30px 0px;
+        }
+        article > h2 {
+            margin: 0;
+            padding: 0px;
+        }
+        article > aside{
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: black;
+            color:white;
+            padding: 1px;
+            text-align: center;
+        }
+        footer > p{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Noticias</a>
+        <a href="">Downloads</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+    </nav>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis quibusdam error quaerat modi deleniti voluptate illo porro quam, ea velit voluptatem voluptas mollitia aliquam tempore, itaque sint perspiciatis ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, sit? Fuga, laudantium officia, atque saepe pariatur odit nostrum quasi, cupiditate eligendi dignissimos quisquam harum reprehenderit animi? Dicta facere cum itaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, consequatur? Delectus quia enim ea vero dolorem similique, sed, incidunt laborum molestias minima aut dignissimos quidem? Reprehenderit pariatur sed enim repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo ea distinctio tempora expedita. Necessitatibus, suscipit repellendus amet dolore animi illum consequatur eveniet sapiente aliquid! Eos doloremque porro fuga consequuntur!</p>
+                <aside>
+                    <p>Artigo escrito por Fulano.</p>
+                </aside>
+            </article>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Anselmo</p>
+    </footer>
+</body>
+</html>

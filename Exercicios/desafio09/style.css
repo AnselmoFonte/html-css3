@@ -1,0 +1,11 @@
+@charset "UTF-";
+
+body{
+    background-color: darkgray;
+    font-family:cursive;
+    text-align: center;
+    }
+
+h1{
+    color: rgb(0, 0, 0);
+}
