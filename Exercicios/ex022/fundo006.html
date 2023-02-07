@@ -8,6 +8,7 @@
     <style>
         body{
             height: 100vh;
+            position: relative;
             /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
@@ -20,6 +21,9 @@
             */
             background: black url('imagens/wallpaper002.jpg') center top no-repeat  fixed;
             background-size: cover;
+
+
+
         }
         header{
             min-height: 200px;
@@ -31,7 +35,14 @@
             background-color: white;
             max-width: 800px;
             padding: 10px;
-            margin: auto;
+            /*margin: auto;*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -14.5%);
+
+
+            
             box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.575);
         }
     </style>
