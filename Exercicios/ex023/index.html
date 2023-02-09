@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+    <style>
+        table{
+            border: 1px solid black;
+            width: 450px;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr.cabeçalho{
+            background-color: rgb(160, 160, 160);
+            color: white;
+            font-weight: bolder;
+            font-size: 1.2em;
+            border: 2px solid black;
+            text-align: center;
+        }
+        td.nome:hover{
+            background-color: blue;
+        }
+        td.idade:hover{
+            background-color: blue;
+        }
+
+        td.email:hover{
+            background-color: blue;
+        }
+
+
+        tr >td >a{
+            color: black;
+            text-decoration: none;
+        }
+        tr >td >a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- 
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+            TABLE DATA = dado de tabela
+    -->
+    <table>
+        <tr class="cabeçalho">
+            <td class="nome">Nome</td>
+            <td class="idade">Idade</td>
+            <td class="email">Email</td>
+        <tr>
+            <td><a href="#">Link</a></td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    
+    </table>
+    
+</body>
+</html>
