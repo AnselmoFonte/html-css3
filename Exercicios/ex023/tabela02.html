@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+            background-color: white;
+            box-shadow: 4px 7px 11px -2px black;
+            position: relative;
+            display: inline-table;
+            vertical-align: top;
+
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        caption{
+            background-color: rgb(53, 53, 53);
+            padding: 15px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        thead, tfoot{
+            background-color: rgb(163, 163, 163);
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            font-size: 1em;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(163, 163, 163);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(231, 231, 231);
+        }
+        .num{
+            text-align: right;
+        }
+        .populaçao{
+            width: 100px;
+        }
+
+        picture{
+            margin-left: 50px;
+            padding: 5px 10px;
+            border: 1px solid rgb(0, 0, 0);
+            display: inline-block;
+            box-shadow: 4px 7px 11px -2px rgba(0, 0, 0, 0.377);
+
+        }
+        picture > p{
+            display: block;
+        }
+        .leg1{
+            width: 1em;
+            height: 1em;
+            background-color: #00112B;
+            display: inline-block;
+            border:1px solid #00112B;
+            margin-bottom: -3px;
+        }
+        .leg2{
+            width: 1em;
+            height: 1em;
+            background-color: #003380;
+            display: inline-block;
+            border:1px solid #003380;
+            margin-top: 2px;
+            margin-bottom: -3px;
+        }
+        .leg3{
+            width: 1em;
+            height: 1em;
+            background-color: #0055D4;
+            display: inline-block;
+            border:1px solid #0055D4;
+            margin-top: 2px;
+            margin-bottom: -3px;
+        }
+
+        .leg4{
+            width: 1em;
+            height: 1em;
+            background-color: #5599FF;
+            display: inline-block;
+            border:1px solid #5599FF;
+            margin-top: 2px;
+            margin-bottom: -3px;
+        }
+
+        .leg5{
+            width: 1em;
+            height: 1em;
+            background-color: #AACCFF;
+            display: inline-block;
+            border:1px solid #AACCFF;
+            margin-top: 2px;
+            margin-bottom: -3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES:
+        table
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td,th
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" class="populaçao">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira de São Paulo"> São Paulo</td>
+                    <td  class="num">46.024.937</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="Bandeira de Minas Gerais"> Minas Gerais</td>
+                    <td  class="num">20.732.660</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="Bandeira do Rio de Janeiro"> Rio de Janeiro</td>
+                    <td  class="num">16.615.526</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="Bandeira da Bahia"> Bahia</td>
+                    <td class="num">14.659.023</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt="Bandeira do Paraná"> Paraná</td>
+                    <td class="num">11.835.379</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="Bandeira do Rio Grande do Sul"> Rio Grande do Sul</td>
+                    <td class="num">11.088.065</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="Bandeira de Pernambuco"> Pernambuco</td>
+                    <td class="num">9.051.113</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt="Bandeira do Ceará"> Ceará</td>
+                    <td class="num">8.936.431</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt="Bandeira do Pará"> Pará</td>
+                    <td class="num">8.442.962</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="Bandeira de Santa Catarina"> Santa Catarina</td>
+                    <td class="num">7.762.154</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt="Bandeira de Goiás"> Goiás</td>
+                    <td class="num">6.950.976</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt="Bandeira do Maranhão"> Maranhão</td>
+                    <td class="num">6.800.605</td>
+                </tr>
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes:</th>
+            <td class="num"><strong>207.750.291</strong></td>
+
+        </tfoot>
+
+    </table>
+
+    <picture>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Brazilian_States_by_Population_%282018%29.svg/300px-Brazilian_States_by_Population_%282018%29.svg.png" alt="População Brasileira 2018">
+        <p><strong>Mapa brasileiro da população em 2018.</strong><br>
+            Legenda: <br>
+              <span class="leg1"></span> > 15.000.000 <br>
+              <span class="leg2"></span> 10.000.000 – 15.000.000 <br>
+               <span class="leg3"></span> 5.000.000 – 10.000.000 <br>
+               <span class="leg4"></span> 1.000.000 – 5.000.000 <br>
+               <span class="leg5"></span> 500.000 – 1.000.000</p>
+    </picture>
+
+    
+</body>
+</html>
