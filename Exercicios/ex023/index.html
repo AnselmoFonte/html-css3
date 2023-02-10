@@ -9,24 +9,32 @@
         table{
             border: 1px solid black;
             width: 450px;
+            height: 450px;
             padding: 5px;
             border-collapse: collapse;
         }
+
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: left; /*ALINHAMENTO HORIZONTAL*/
+            vertical-align: middle; /*ALINHAMENTO VERTICAL*/     
         }
-        tr.cabeçalho{
+        
+        tr.cabeçalho > td{
             background-color: rgb(160, 160, 160);
             color: white;
             font-weight: bolder;
             font-size: 1.2em;
             border: 2px solid black;
             text-align: center;
+            height: 40px;
         }
+
         td.nome:hover{
             background-color: blue;
         }
+
         td.idade:hover{
             background-color: blue;
         }
