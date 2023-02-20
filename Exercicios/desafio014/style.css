@@ -1,4 +1,35 @@
 @charset "UTF-8";
 body{
-    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td, tr, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+thead{
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
+
+.media{
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
+
+.cat{
+    font-weight: bolder;
+}
+
+

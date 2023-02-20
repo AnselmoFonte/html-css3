@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+
+}
+caption{
+    font-size: 1.3em;
+    background-color: grey;
+    padding: 5px;
+    color: white;    
+}
+
+td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+tbody > tr:nth-child(2n){
+    background-color: rgb(192, 192, 192);
+}
+
+col.prod{
+    text-align: left;
+}
+td{
+    text-align: center;
+}
+
+#container{
+    overflow-x: auto;
+    width: 94vw;
+}
+
