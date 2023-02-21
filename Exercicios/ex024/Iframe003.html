@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            display: block;
+        }
+
+        a{
+            margin: 5px;
+        }
+        a:hover{
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);
+        }
+    </style>
+    <title>Uso de Iframes</title>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui sunt officiis eaque doloribus nostrum ex? Quae at dolores facere, sed, sequi aperiam praesentium corrupti autem, placeat ipsum non libero.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="monitor">Page 1</a></li>
+        <li><a href="paginas-extras/pag002.html" target="monitor">Page 2</a></li>
+        <li><a href="paginas-extras/pag003.html" target="monitor">Page 3</a></li>
+    </ul>
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum harum voluptatibus, voluptas a id! Praesentium aut sapiente nihil dolor quos delectus ea asperiores dolorem, aliquam cumque, aperiam officiis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa laudantium, nesciunt eaque vitae velit ducimus quia tempore, similique totam modi. Voluptatibus sapiente porro iste, itaque dolores impedit autem ullam!</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima ou abaixo</h1>" frameborder="1" id="tela" name="monitor">
+        <p>Infelizmente seu navegador não é compativel.</p>
+    </iframe>
+    <a href="img/Dodge2.jpg" target="monitor"><img src="img/Dodge2.jpg" height="40px" width="40px" alt=""></a>
+    <a href="img/Dodge1.jpg" target="monitor"><img src="img/Dodge1.jpg" height="40px" width="40px" alt=""></a>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae earum harum voluptatibus, voluptas a id! Praesentium aut sapiente nihil dolor quos delectus ea asperiores dolorem, aliquam cumque, aperiam officiis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa laudantium, nesciunt eaque vitae velit ducimus quia tempore, similique totam modi. Voluptatibus sapiente porro iste, itaque dolores impedit autem ullam!</p>
+    
+</body>
+</html>
